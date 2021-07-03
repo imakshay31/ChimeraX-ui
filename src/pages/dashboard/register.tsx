@@ -336,7 +336,6 @@ const Register: React.FC<ComponentProps> = ({ viewer, refetch, environment, setS
                       color="primary"
                       variant="contained"
                       className={classes.button}
-                      disabled
                     >
                       Proceed
                       </Button>

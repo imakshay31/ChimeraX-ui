@@ -253,7 +253,6 @@ const SignIn: React.FC<ComponentProps> = ({ setErrorMessage, setSuccessMessage }
                     variant="outlined"
                     // className={classes.field}
                     margin="normal"
-                    disabled
                   />
                 )}
               </Field>
@@ -264,7 +263,7 @@ const SignIn: React.FC<ComponentProps> = ({ setErrorMessage, setSuccessMessage }
                     id="password-input"
                     label="Password"
                     required
-                    disabled
+                    
                     {...field}
                     error={!!(meta.touched && meta.error)}
                     helperText={meta.touched ? meta.error : ''}
@@ -299,17 +298,16 @@ const SignIn: React.FC<ComponentProps> = ({ setErrorMessage, setSuccessMessage }
                 variant="contained"
                 className={classes.submit}
                 color="primary"
-                disabled
               >
                 {formData.text}
               </Button>
-              <Box mt={5}>
+              {/*<Box mt={5}>
                 {' '}
                 <Typography align="center" variant="h6">
                   Registrations are closed now.
                 </Typography>
-              </Box>
-              {/* 
+              </Box>*/}
+              
               <Box mt={5}>
                 {' '}
                 <Typography align="center" variant="subtitle1">
@@ -335,7 +333,7 @@ const SignIn: React.FC<ComponentProps> = ({ setErrorMessage, setSuccessMessage }
                     )}
                   ></GoogleLogin>
                 </Grid>
-              </Box> */}
+              </Box> 
             </Form>
           </Formik>
           {/* </form> */}
