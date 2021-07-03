@@ -308,7 +308,7 @@ const SignIn: React.FC<ComponentProps> = ({ setErrorMessage, setSuccessMessage }
                 </Typography>
               </Box>*/}
               
-              <Box mt={5}>
+              {/*<Box mt={5}>
                 {' '}
                 <Typography align="center" variant="subtitle1">
                   Or Sign up with other social platforms
@@ -333,7 +333,7 @@ const SignIn: React.FC<ComponentProps> = ({ setErrorMessage, setSuccessMessage }
                     )}
                   ></GoogleLogin>
                 </Grid>
-              </Box> 
+              </Box> */}
             </Form>
           </Formik>
           {/* </form> */}
